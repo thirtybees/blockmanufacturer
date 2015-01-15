@@ -51,7 +51,7 @@ class BlockManufacturer extends Module
 		Configuration::updateValue('MANUFACTURER_DISPLAY_TEXT_NB', 5);
 		Configuration::updateValue('MANUFACTURER_DISPLAY_FORM', false);
 		$success = (parent::install() &&
-			$this->registerHook('header') &&
+			$this->registerHook('header') && $this->registerHook('leftColumn') &&
 			$this->registerHook('actionObjectManufacturerDeleteAfter') &&
 			$this->registerHook('actionObjectManufacturerAddAfter') &&
 			$this->registerHook('actionObjectManufacturerUpdateAfter')
