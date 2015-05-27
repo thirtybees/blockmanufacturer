@@ -58,7 +58,19 @@ class BlockManufacturer extends Module
 		);
 
 		return $success;
-    }
+	}
+
+	public function uninstall()
+	{
+		if (!parent::uninstall() ||
+			!Configuration::deleteByName('MANUFACTURER_DISPLAY_TEXT') ||
+			!Configuration::deleteByName('MANUFACTURER_DISPLAY_TEXT_NB') ||
+			!Configuration::deleteByName('MANUFACTURER_DISPLAY_FORM')
+		)
+			return false;
+
+		return true;
+	}
 
 	public function hookLeftColumn($params)
 	{
