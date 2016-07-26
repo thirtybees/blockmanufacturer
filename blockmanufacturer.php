@@ -42,7 +42,7 @@ class BlockManufacturer extends Module
 
 		$this->displayName = $this->l('Manufacturers block');
         $this->description = $this->l('Displays a block listing product manufacturers and/or brands.');
-		$this->ps_versions_compliancy = array('min' => '1.6', 'max' => _PS_VERSION_);
+		$this->ps_versions_compliancy = array('min' => '1.6', 'max' => '1.6.99.99');
     }
 
 	public function install()
