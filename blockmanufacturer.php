@@ -40,7 +40,7 @@ class BlockManufacturer extends Module
         $this->bootstrap = true;
 		parent::__construct();
 
-		$this->displayName = $this->l('Manufacturers block');
+		$this->displayName = $this->l('Block Manufacturers');
         $this->description = $this->l('Displays a block listing product manufacturers and/or brands.');
 		$this->ps_versions_compliancy = array('min' => '1.6', 'max' => '1.6.99.99');
     }
