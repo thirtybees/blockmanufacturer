@@ -6,6 +6,7 @@ tags:
   - manufacturer
   - brand
   - manufacturers
+  - blockmanufacturer
 description_short: The block manufacturer allows you to dislay a block link manufacturers
 description: description.md
 images:
